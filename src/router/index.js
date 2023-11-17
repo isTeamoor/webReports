@@ -5,14 +5,24 @@ import StartPage from "@/sections/Start Page.vue";
 
 const routes = [
   {
+    path: "/report",
+    name: "report",
+    component: () => import("@/sections/report.vue"),
+  },
+  {
+    path: "/studyd3",
+    name: "studyd3",
+    component: () => import("@/sections/studyd3.vue"),
+  },
+  {
     path: "/s-Curve",
     name: "s-Curve",
     component: () => import("@/sections/sCurve.vue"),
   },
   {
-    path: "/work orders",
+    path: "/workOrders",
     name: "work-orders",
-    component: () => import("@/sections/Work Orders.vue"),
+    component: () => import("@/sections/workOrders.vue"),
   },
 
   {
