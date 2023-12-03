@@ -1,18 +1,12 @@
 <template>
   <div class="sideBar">
-    <button @click="$router.push('/startPage')">Go to Start Page</button>
+    <button @click="$router.push('/')">Home Page</button>
     <br>
     <hr>
     <button @click="$router.push('/report')">Report</button>
     <br>
     <hr>
     <button @click="$router.push('/workOrders')">Statistics on Work Orders</button>
-    <br>
-    <hr>
-    <button @click="$router.push('/s-Curve')">S-Curve</button>
-    <br>
-    <hr>
-    <button @click="$router.push('/studyd3')">study d3</button>
   </div>
 
   <div class="display">
@@ -21,7 +15,6 @@
 </template>
 
 <script>
-//<button @click="$router.push({name:'plan-fact', params:{id:0, section:'section'}})">Plan - Fact</button>
 </script>
 
 

@@ -74,7 +74,7 @@
 </template>
 
 <script>
-import { byAssets } from "@/assets/js/byAssets"
+import { byAssets } from "@/js/byAssets"
 export default {
   name: "report",
   data() {
@@ -138,3 +138,4 @@ th {
   display: none;
 }
 </style>
+@/js/byAssets
