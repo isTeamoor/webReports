@@ -75,6 +75,7 @@
 
 <script>
 import { byAssets } from "@/js/byAssets"
+import { getValue } from "@/js/requests";
 export default {
   name: "report",
   data() {
@@ -98,7 +99,7 @@ export default {
     }
   },
   mounted() {
-    fetch('http://127.0.0.1:8000/utils/WO_total_number').then(d => d.json()).then(d => { console.log(d); this.WO_total_number = d });
+    getValue('WO_total_number').then(d => this.WO_total_number = d)
     fetch('http://127.0.0.1:8000/utils/WO_raised_years').then(d => d.json()).then(d => { console.log(d); this.WO_raised_years = d });
     fetch('http://127.0.0.1:8000/utils/WO_raised_byYears').then(d => d.json()).then(d => { console.log(d); this.WO_raised_byYears = d });
 

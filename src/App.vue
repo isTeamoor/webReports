@@ -3,6 +3,9 @@
     <button @click="$router.push('/')">Home Page</button>
     <br>
     <hr>
+    <button @click="$router.push('/analysis/raisedWO')">Raised WO</button>
+    <br>
+    <hr>
     <button @click="$router.push('/report')">Report</button>
     <br>
     <hr>
